@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 
 mongoose
   .connect(
-    "mongodb+srv://tufail14:iLqEZHiVNKwhHMyb@backenddb.iczma.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB"
+ process.env.MONGO_URL
   )
 
   .then(() => {
